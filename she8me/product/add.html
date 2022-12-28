@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/she8me/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/she8me/animate.css/animate.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+    <div class="container-fluid">
+      <a class="navbar-brand">零售作業系統</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/she8me/index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/she8me/product.html">商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/she8me/order.html">訂單</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/she8me/increase.html">追加</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/she8me/account.html">帳務</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <input type="button" value="商品首頁" class="p-2 bg-lightblue rounded mt-3 h-25 center fs-5" onclick="location.href='/she8me/product.html'">
+          <input type="button" value="新增商品" class="p-2 bg-powderblue rounded mt-3 h-25 center fs-5" onclick="location.href='product/add.html'" disabled>
+          <input type="button" value="廠商管理" class="p-2 bg-paleturquoise rounded mt-3 h-25 center fs-5" onclick="location.href='contacts.html'">
+        </div>
+      </div>
+
+      <div class="col-md-10">
+        <div class="input-group my-3">
+          <span class="input-group-text">貨號</span>
+          <input type="text" class="form-control" id="id">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">名稱</span>
+          <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text">圖片</span>
+          <input type="file" class="form-control" id="img" accept="image/*">
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text">季節</span>
+          <select class="form-select" id="season">
+            <option selected>春</option>
+            <option>夏</option>
+            <option>秋</option>
+            <option>冬</option>
+          </select>
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text">款式</span>
+          <select class="form-select" id="season">
+            <option selected>上衣</option>
+            <option>下身</option>
+            <option>洋裝</option>
+            <option>套裝</option>
+            <option>外套</option>
+            <option>內衣褲</option>
+            <option>襪子</option>
+            <option>帽子</option>
+          </select>
+        </div>
+
+        <div class="bg-powderblue p-2 rounded mb-3">
+          <div class="input-group mb-3">
+            <select class="form-select" id="source">
+              <option selected>台灣</option>
+              <option>韓國</option>
+              <option>中國</option>
+            </select>
+            <input type="text" class="form-control" id="contacts">
+            <button class="btn btn-outline-secondary bg-white" type="button">新增廠商</button>
+          </div>
+
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="contacts">廠商</label>
+            <select class="form-select" id="source">
+              <option selected>台灣</option>
+              <option>韓國</option>
+              <option>中國</option>
+            </select>
+            <select class="form-select" id="contacts">
+              <option selected>選擇...</option>
+              <option>one</option>
+              <option>two</option>
+              <option>three</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">批價</span>
+            <input type="text" class="form-control" id="cost">
+            <select class="form-select" id="currency">
+              <option selected>台幣</option>
+              <option>韓元</option>
+              <option>人民幣</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">顏色</span>
+            <input type="text" class="form-control" id="color">
+            <button class="btn btn-outline-secondary bg-white" type="button">新增顏色</button>
+          </div>
+          <div class="input-group mb-3">
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">黑</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">白</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">灰</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">杏</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">卡</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">綠</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">綠</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">紫</span>
+            <span><input class="form-check-input mt-0 ms-2" type="checkbox">橘</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="button" value="新增" class="rounded py-2 px-5 ms-auto">
+          </div>
+        </div>
+
+        <div class="input-group my-3">
+          <span class="input-group-text">售價</span>
+          <input type="text" class="form-control" id="price">
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="button" value="新增商品" class="rounded py-2 px-5 ms-auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="/she8me/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/she8me/jQuery/jquery.min.js"></script>
+  <script src=""></script>
+</body>
+
+</html>

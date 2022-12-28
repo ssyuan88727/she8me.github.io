@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/she8me/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/she8me/animate.css/animate.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+    <div class="container-fluid">
+      <a class="navbar-brand">零售作業系統</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/she8me/index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/she8me/product.html">商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/she8me/order.html">訂單</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/she8me/increase.html">追加</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/she8me/account.html">帳務</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <input type="button" value="商品首頁" class="p-2 bg-lightblue rounded mt-3 h-25 center fs-5"
+            onclick="location.href='/she8me/product.html'">
+          <input type="button" value="新增商品" class="p-2 bg-powderblue rounded mt-3 h-25 center fs-5"
+            onclick="location.href='add.html'">
+          <input type="button" value="廠商管理" class="p-2 bg-paleturquoise rounded mt-3 h-25 center fs-5"
+            onclick="location.href='product/contacts.html'" disabled>
+        </div>
+      </div>
+
+      <div class="col-md-10">
+        <div class="mt-3">
+          <div class="input-group mb-3">
+            <select class="form-select">
+              <option selected>可篩選...</option>
+              <option>台灣</option>
+              <option>韓國</option>
+              <option>中國</option>
+            </select>
+            <input type="text" class="form-control" placeholder="搜尋廠商">
+            <button class="btn btn-outline-secondary" type="button">搜尋</button>
+          </div>
+
+          <div class="input-group mb-3">
+            <select class="form-select">
+              <option selected>台灣</option>
+              <option>韓國</option>
+              <option>中國</option>
+            </select>
+            <input type="text" class="form-control" id="contacts" placeholder="新增廠商">
+            <button class="btn btn-outline-secondary" type="button">新增</button>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card w-auto d-inline-block m-auto mb-2 ">
+            <div class="card-body">
+              <h5 class="card-title">My Girl</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">極</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+          
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Riley</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Homie</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">比熊</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">拉比</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Smith</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Dora</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Annyeon</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Chole</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Cheers</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+
+          <div class="card w-auto d-inline-block m-auto mb-2">
+            <div class="card-body">
+              <h5 class="card-title">7-11</h5>
+              <p class="card-text">台灣</p>
+              <input type="button" value="刪除" class="rounded py-2 px-lg-5 ms-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="/she8me/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/she8me/jQuery/jquery.min.js"></script>
+    <script src=""></script>
+</body>
+
+</html>
