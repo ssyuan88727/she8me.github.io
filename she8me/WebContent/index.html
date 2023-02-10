@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100 h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bootstrap-5.2.3.min.css">
+  <link rel="stylesheet" href="../css/sweetalert2-11.7.1.min.css">
+</head>
+
+<body class="w-100 h-100">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-pink fs-5">
+    <div class="container-fluid">
+      <a class="navbar-brand">零售作業系統</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon btn"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+    style="width: 250px;">
+    <div class="offcanvas-header">
+      <div class="container-fluid border-bottom d-flex align-items-center justify-content-between p-3 link-dark">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span>零售作業系統</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="offcanvas-body fs-5">
+      <div class="border-bottom">
+        <div type="button" class="pb-2 ps-4 items" id="product_btn" data-bs-dismiss="offcanvas" aria-label="Close">商品</div>
+        <div type="button" class="pb-2 ps-4 items" id="supplier_btn" data-bs-dismiss="offcanvas" aria-label="Close">廠商</div>
+        <div type="button" class="pb-2 ps-4 items" id="additional_btn" data-bs-dismiss="offcanvas" aria-label="Close">追加</div>
+        <div type="button" class="pb-2 ps-4 items" id="account_btn" data-bs-dismiss="offcanvas" aria-label="Close">帳務</div>
+      </div>
+      <div type="button" class="pb-2 ps-4 items mt-3" id="document_btn" data-bs-dismiss="offcanvas" aria-label="Close">檔案管理</div>
+    </div>
+  </div>
+
+  <div id="iframe"></div>
+
+  <script src="../js/bootstrap-5.2.3.min.js"></script>
+  <script src="../js/jquery-3.6.3.min.js"></script>
+  <script src="../js/sweetalert2-11.7.1.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
